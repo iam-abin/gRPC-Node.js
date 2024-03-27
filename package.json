@@ -1,6 +1,22 @@
 {
+  "name": "grpcnodejs",
+  "version": "1.0.0",
+  "description": "grpc study",
+  "main": "index.js",
+  "scripts": {
+    "pb:gen": "./scripts/gen.sh greet",
+    
+    "greet:server": "node greet/server/index.js",
+    "greet:client": "node greet/client/index.js"
+
+  },
+  "author": "abin",
+  "license": "ISC",
   "dependencies": {
     "@grpc/grpc-js": "^1.10.1",
     "google-protobuf": "^3.21.2"
+  },
+  "devDependencies": {
+    "grpc-tools": "^1.12.4"
   }
 }
